@@ -9,9 +9,20 @@ public class Car {
     double buyingPrice;
     Owner owner;
 
-    void calculateResaleValue(int currentYear) {
+    double calculateIpva() {
+        if (calculateYearsOfUse() >= 10) {
+            return 0;
+        }
+        return calculateResaleValue() * 0.04;
+    }
 
-        int yearsOfUse = currentYear- manufactureYear;
+    int calculateYearsOfUse() {
+        return 2024 - manufactureYear;
+    }
+
+    double calculateResaleValue() {
+
+        int yearsOfUse = calculateYearsOfUse();
         var lifeSpan = 20;
         double resalePrice = (buyingPrice / lifeSpan) * (lifeSpan - yearsOfUse);
 
@@ -19,7 +30,7 @@ public class Car {
             resalePrice = 0;
         }
 
-        System.out.printf("Resale price: %.2f", resalePrice);
+        return resalePrice;
     }
 
 }

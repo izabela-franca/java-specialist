@@ -36,6 +36,6 @@ public class Main {
         System.out.println("-----------------------");
 
         //Working with methods
-        car1.calculateResaleValue(2024);
+        System.out.println(car1.calculateResaleValue());
     }
 }
