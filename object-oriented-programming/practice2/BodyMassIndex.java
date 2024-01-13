@@ -10,8 +10,4 @@ public class BodyMassIndex {
         return result >= 30;
     }
 
-    boolean isUnderweight() {
-        return result < 18.5;
-    }
-
 }
