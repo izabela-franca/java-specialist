@@ -6,4 +6,12 @@ public class BodyMassIndex {
     double weight;
     double height;
 
+    boolean isObese() {
+        return result >= 30;
+    }
+
+    boolean isUnderweight() {
+        return result < 18.5;
+    }
+
 }
