@@ -23,7 +23,7 @@ public class Car {
     double calculateResaleValue() {
 
         int yearsOfUse = calculateYearsOfUse();
-        var lifeSpan = 20;
+        final var lifeSpan = 20;
         double resalePrice = (buyingPrice / lifeSpan) * (lifeSpan - yearsOfUse);
 
         if (resalePrice < 0) {
