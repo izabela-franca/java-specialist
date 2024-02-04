@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/arrays/arrays.iml" filepath="$PROJECT_DIR$/arrays/arrays.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/java-specialist.iml" filepath="$PROJECT_DIR$/.idea/java-specialist.iml" />
       <module fileurl="file://$PROJECT_DIR$/object-oriented-programing/object-oriented-programing.iml" filepath="$PROJECT_DIR$/object-oriented-programing/object-oriented-programing.iml" />
       <module fileurl="file://$PROJECT_DIR$/wrappers-and-boxing/wrappers-and-boxing.iml" filepath="$PROJECT_DIR$/wrappers-and-boxing/wrappers-and-boxing.iml" />
