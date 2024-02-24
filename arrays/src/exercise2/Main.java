@@ -26,7 +26,7 @@ public class Main {
         cardapio.removeItem(0);
         System.out.println("---");
 
-        cardapio.printItems(0, 150);
+        cardapio.printItems(0, 10);
     }
 
 }

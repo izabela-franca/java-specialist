@@ -5,21 +5,26 @@ import java.util.Arrays;
 
 public class Menu {
 
-    ArrayList<MenuItem> itens = new ArrayList<>();
+    ArrayList<MenuItem> items = new ArrayList<>();
 
     void addItem(MenuItem item) {
-        itens.add(item);
+        items.add(item);
     }
 
     void removeItem(int index) {
-        itens.remove(index);
+        items.remove(index);
     }
 
-    void printItems(double precoMinimo, double precoMaximo) {
-        for (MenuItem item : itens) {
+    ArrayList<MenuItem> printItems(double precoMinimo, double precoMaximo) {
+
+        ArrayList<MenuItem> itemsFound = new ArrayList<>();
+
+        for (MenuItem item : items) {
             if (item.hasPriceBetween(precoMinimo, precoMaximo)) {
                 item.printList();
             }
         }
+
+        return itemsFound;
     }
 }
