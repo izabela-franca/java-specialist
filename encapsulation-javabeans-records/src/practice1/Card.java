@@ -1,6 +1,13 @@
 package practice1;
 
-public class Card {
+import java.io.Serializable;
+
+/*For a class to become JavaBeans, it needs:
+    - An empty constructor
+    - To implements the interface Serializable
+*/
+
+public class Card implements Serializable {
 
     public static final double DEPOSIT_TAX = 0.10;
     public static final double MINIMUM_DEPOSIT = 50;
@@ -8,12 +15,20 @@ public class Card {
     private String cardholder;
     private double balance;
 
+    public Card() {
+
+    }
+
     public Card(String cardholder) {
         this.cardholder = cardholder;
     }
 
     public String getCardholder() {
         return cardholder;
+    }
+
+    public void setCardholder(String cardholder) {
+        this.cardholder = cardholder;
     }
 
     public double getBalance() {
